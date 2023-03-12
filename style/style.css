@@ -51,6 +51,16 @@ header {
     height: 120px;
     background: url(../img/logo.png)  center center/cover no-repeat;
 }
+.logo_mobile {
+    position: relative;
+    left: 5px;
+    /* cursor: pointer; */
+    margin-right:auto ;
+    width: 75px;
+    display: none;
+    height: 70px;
+    background: url(../img/logo_mobile.png)  center center/cover no-repeat;  
+}
 .navigation-content {
     margin-left: auto;
     display: flex;
@@ -467,7 +477,7 @@ to {
     height: 300px; 
     box-shadow: 2px 5px 5px 0px grey;
     position: relative;
-    background: url(../img/specifications.jpg) center center/cover no-repeat;
+    background: url(/img/specifications.jpg) center center/cover no-repeat;
 
 }
 .skill > p {
