@@ -156,3 +156,25 @@
         font-size: 22px;
     }
 }
+@media(max-width:650px){
+    .logo {
+        display: none;
+    }
+    .logo_mobile{
+        display: block;
+    }
+    .navigation-content {
+        opacity: block;
+        margin: 0;
+        padding: 0;
+    }
+    .header-content > h1 {
+        font-size: 2.9rem;
+    }
+    .header-content > h1 > span {
+        font-size: 2.9rem;
+    }
+    .header-content > p {
+        font-size: 1.5rem;
+    }
+}
