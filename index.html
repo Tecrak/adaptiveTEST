@@ -23,9 +23,10 @@
         </style> -->
         <div class="navigation">
             <a href="#section_home" class="logo"></a>
-            <ul class="navigation-content">
+            <div class="logo_mobile"></div>
+            <ul class="navigation-content" id="navigateMenu">
                 <li class="navigate home">
-                    <a href="#section_home">Home
+                    <a>Home
                         <ul class="list">
                             <span class="nicething"></span>
                             <a class="list_link" href="#section_about"><li>About us</li></a>
@@ -34,7 +35,7 @@
                     </a>
                 </li>
                 <li class="navigate apply">
-                    <a href="#section_specifications">Apply now
+                    <a>Apply now
                         <ul class="list">
                             <span class="nicething"></span>
                             <a href="#section_specifications" class="list_link"><li>Specifications</li></a>
@@ -80,7 +81,7 @@
                     <div class="team_block">
                         <div class="team_member">
                             <div class="team_image">
-                                <img src="img/team_1.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownLeft" data-wow-delay="0.3s">
+                                <img src="/img/team_1.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownLeft" data-wow-delay="0.3s">
                             </div>
                             <div class="team_text_content">
                                 <p class="wow animate__animated  animate__zoomInDown" data-wow-delay="0.7s">Web Developer</p>
@@ -93,7 +94,7 @@
                         </div>
                         <div class="team_member">
                             <div class="team_image">
-                                <img src="img/team_2.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownLeft" data-wow-delay="0.5s">
+                                <img src="/img/team_2.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownLeft" data-wow-delay="0.5s">
                             </div>
                             <div class="team_text_content">
                                 <p class="wow animate__animated  animate__zoomInDown" data-wow-delay="0.7s">Web Designer</p>
@@ -107,7 +108,7 @@
                         </div>
                         <div class="team_member">
                             <div class="team_image">
-                                <img src="img/team_3.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownRight" data-wow-delay="0.5s">
+                                <img src="/img/team_3.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownRight" data-wow-delay="0.5s">
                             </div>
                             <div class="team_text_content">
                                 <p class="wow animate__animated  animate__zoomInDown" data-wow-delay="0.7s">HTML/CSS/JS Tutor</p>
@@ -121,7 +122,7 @@
                         </div>
                         <div class="team_member">
                             <div class="team_image">
-                                <img src="img/team_4.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownRight" data-wow-delay="0.3s">
+                                <img src="/img/team_4.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownRight" data-wow-delay="0.3s">
                             </div>
                             <div class="team_text_content">
                                 <p class="wow animate__animated  animate__zoomInDown" data-wow-delay="0.7s">Manager/Scripter</p>
@@ -374,12 +375,18 @@
         </div>
     </div>
     <script>
+
         const modal_open = document.getElementById("modal_background"); 
+        const navigate_open=document.querySelector(".list");
+
         function contact(){
             modal_open.classList.remove("closed");
         }
         function closer(){
             modal_open.classList.add("closed")
+        }
+        function mobileMenu(){
+            navigate_open.style="display:block";
         }
     </script>
      <footer>
@@ -394,7 +401,7 @@
             </div>
             <div class="location">
                 <p class="footer_h">Our location:</p>
-                <img src="img/Contact_map.png" type="img/png" alt="map">
+                <img src="../img/Contact_map.png" type="img/png" alt="map">
                 <p><span class="fa-solid fa-location-dot"></span> Vinnitsia,Stryzhavka, Pershotravneva Street</p>
             </div>
             <div class="social_medias">
