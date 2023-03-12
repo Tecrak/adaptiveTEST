@@ -169,12 +169,12 @@
         padding: 0;
     }
     .header-content > h1 {
-        font-size: 2.9rem;
+        font-size: 40px;
     }
     .header-content > h1 > span {
-        font-size: 2.9rem;
+        font-size: 40px;
     }
     .header-content > p {
-        font-size: 1.5rem;
+        font-size: 19px;
     }
 }
