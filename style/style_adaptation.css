@@ -134,7 +134,7 @@
         flex-wrap: wrap;
     }
 }
-@media(max-width:650px) {
+@media(max-width:650px){
     .logo {
         display: none;
     }
@@ -143,12 +143,8 @@
     }
     .navigation-content {
         opacity: block;
-        /* background: red; */
         margin: 0;
         padding: 0;
-    }
-    .navigation-content > * {
-        
     }
     .header-content > h1 {
         font-size: 45px;
