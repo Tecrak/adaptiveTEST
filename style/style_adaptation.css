@@ -138,6 +138,8 @@
     .navigation-content {
         display: none;
         float: left;
+        margin: 0;
+        padding: 0;
         background: red;
     }
     .logo {
@@ -145,15 +147,6 @@
     }
     .logo_mobile{
         display: block;
-    }
-    .navigation-content {
-        opacity: block;
-        /* background: red; */
-        margin: 0;
-        padding: 0;
-    }
-    .navigation-content > * {
-        
     }
     .header-content > h1 {
         font-size: 2.9rem;
