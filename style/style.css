@@ -87,7 +87,7 @@ header {
 .logo_mobile {
     position: relative;
     z-index: 1;
-    left: 25px;
+    left: 10px;
     margin-right:auto ;
     width: 75px;
     display: none;
