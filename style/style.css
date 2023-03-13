@@ -51,10 +51,43 @@ header {
     height: 120px;
     background: url(../img/logo.png)  center center/cover no-repeat;
 }
+.mobile_navigation {
+    list-style: none;
+    position: relative;
+    left:10px;
+    margin-right: auto;
+}
+.mobile_navigation_cont{
+    position: relative;
+    z-index: 2;
+}
+.mobile_navigation_cont:hover > .mobile_list {
+    display: block;
+}
+.mobile_list {
+    margin: 0;
+    padding: 6px;
+    text-align: center;
+    background: whitesmoke;
+    position: absolute;
+    display: none;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.544);
+}
+.mobile_list > li {
+    padding: 10px 4px;
+    margin-top: 2px;
+}
+.mobile_list > li:hover {
+    background: white;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.336);
+    color:orange;
+    cursor: pointer;
+} 
 .logo_mobile {
     position: relative;
-    left: 5px;
-    /* cursor: pointer; */
+    z-index: 1;
+    left: 25px;
     margin-right:auto ;
     width: 75px;
     display: none;
@@ -63,13 +96,14 @@ header {
 }
 .navigation-content {
     margin-left: auto;
+    position: relative;
     display: flex;
     list-style: none;
 }
 .navigate {
     width: 115px;
     height: 45px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +119,7 @@ header {
     -webkit-transition: 0.4s;
     width:0px;
     height: 3px;
-    top: 25px;
+    bottom: 34px;
 }
 .navigate:hover::before {
     background: rgb(255, 129, 33);
@@ -125,10 +159,10 @@ header {
 }
 @keyframes list_opener {
 from {
-    top:60px;
+    top:20px;
 }
 to {
-    top:81px;
+    top:61px;
 }
 }
 .list_link  {
