@@ -54,7 +54,7 @@ header {
 .mobile_navigation {
     list-style: none;
     position: relative;
-    left:10px;
+    left:5px;
     margin-right: auto;
 }
 .mobile_navigation_cont{
@@ -89,7 +89,7 @@ header {
 .logo_mobile {
     position: relative;
     z-index: 1;
-    left: 10px;
+    left: 5px;
     margin-right:auto ;
     width: 75px;
     display: none;
