@@ -95,14 +95,6 @@
         top:70px;
         font-size: 32px;
     }
-    .navigation {
-        /* display: block; */
-    }
-    .navigation-content {
-        display: none;
-        float: left;
-        background: red;
-    }
     .about_container {
         display: block;
     }
@@ -143,6 +135,11 @@
     }
 }
 @media(max-width:650px) {
+    .navigation-content {
+        display: none;
+        float: left;
+        background: red;
+    }
     .logo {
         display: none;
     }
