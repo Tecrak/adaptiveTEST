@@ -643,6 +643,8 @@ to {
 .form_block > input {
     margin-left: auto;
     transition: 0.2s;
+    max-width: 200px;
+    min-width: 150px;
 }
 .form_block > input:focus,
               select:focus {
