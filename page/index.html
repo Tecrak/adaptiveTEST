@@ -46,8 +46,8 @@
     <div class="container">
         <div class="video-container">
             <video id="my-video" class="video-js" controls preload="auto" data-setup="{}">
-                <source src="../page/videos/vid_example.mp4" type='video/mp4'>
-                <source src="../page/videos/vid_example.webm" type='video/webm'>
+                <source src="/page/videos/vid_example.mp4" type='video/mp4'>
+                <source src="/page/videos/vid_example.webm" type='video/webm'>
             </video>
         </div>
         <div class="text_container">
@@ -175,10 +175,10 @@
     <script>
         const modal_open = document.getElementById("modal_background"); 
         function contact(){
-            modal_open.classList.remove("closed");
+            modal_open.style="display:block";
         }
         function closer(){
-            modal_open.classList.add("closed")
+            modal_open.style="display:none";
         }
     </script>
     <footer>
