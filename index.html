@@ -92,7 +92,7 @@
                     <div class="team_block">
                         <div class="team_member">
                             <div class="team_image">
-                                <img src="img/team_1.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownLeft" data-wow-delay="0.3s">
+                                <img src="/img/team_1.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownLeft" data-wow-delay="0.3s">
                             </div>
                             <div class="team_text_content">
                                 <p class="wow animate__animated  animate__zoomInDown" data-wow-delay="0.7s">Web Developer</p>
@@ -105,7 +105,7 @@
                         </div>
                         <div class="team_member">
                             <div class="team_image">
-                                <img src="img/team_2.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownLeft" data-wow-delay="0.5s">
+                                <img src="/img/team_2.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownLeft" data-wow-delay="0.5s">
                             </div>
                             <div class="team_text_content">
                                 <p class="wow animate__animated  animate__zoomInDown" data-wow-delay="0.7s">Web Designer</p>
@@ -119,7 +119,7 @@
                         </div>
                         <div class="team_member">
                             <div class="team_image">
-                                <img src="img/team_3.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownRight" data-wow-delay="0.5s">
+                                <img src="/img/team_3.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownRight" data-wow-delay="0.5s">
                             </div>
                             <div class="team_text_content">
                                 <p class="wow animate__animated  animate__zoomInDown" data-wow-delay="0.7s">HTML/CSS/JS Tutor</p>
@@ -133,7 +133,7 @@
                         </div>
                         <div class="team_member">
                             <div class="team_image">
-                                <img src="img/team_4.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownRight" data-wow-delay="0.3s">
+                                <img src="/img/team_4.png" type="img/png" alt="" class="wow animate__animated  animate__rotateInDownRight" data-wow-delay="0.3s">
                             </div>
                             <div class="team_text_content">
                                 <p class="wow animate__animated  animate__zoomInDown" data-wow-delay="0.7s">Manager/Scripter</p>
@@ -306,7 +306,7 @@
     <div id="modal_background" class="closed">
         <div id="modal_window">
             <div id="closer" onclick="closer()"></div>
-            <form action="db.php" method="post" id="form">
+            <form action="" method="" id="form">
                 <h3>Please enter information</h3>
                 <div class="form_block">
                     <label for="role">Choose your role</label>
@@ -391,10 +391,10 @@
         const navigate_open=document.querySelector(".list");
 
         function contact(){
-            modal_open.classList.remove("closed");
+            modal_open.style="display:block";
         }
         function closer(){
-            modal_open.classList.add("closed")
+            modal_open.style="display:none";
         }
         function mobileMenu(){
             navigate_open.style="display:block";
@@ -412,7 +412,7 @@
             </div>
             <div class="location">
                 <p class="footer_h">Our location:</p>
-                <img src="img/Contact_map.png" type="img/png" alt="map">
+                <img src="../img/Contact_map.png" type="img/png" alt="map">
                 <p><span class="fa-solid fa-location-dot"></span> Vinnitsia,Stryzhavka, Pershotravneva Street</p>
             </div>
             <div class="social_medias">
