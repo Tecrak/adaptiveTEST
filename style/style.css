@@ -89,7 +89,7 @@ header {
 .logo_mobile {
     position: relative;
     z-index: 1;
-    left: 5px;
+    left: 10px;
     margin-right:auto ;
     width: 75px;
     display: none;
@@ -513,7 +513,7 @@ to {
     height: 300px; 
     box-shadow: 2px 5px 5px 0px grey;
     position: relative;
-    background: url(../img/specifications.jpg) center center/cover no-repeat;
+    background: url(/img/specifications.jpg) center center/cover no-repeat;
 
 }
 .skill > p {
@@ -572,9 +572,6 @@ to {
     z-index: 5;
     top:0;
     width: 100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
     height: 100%;
     animation: 1s opener forwards;
     -o-animation: 1s opener forwards;
@@ -595,6 +592,8 @@ to {
     border-radius: 3px;
     position: relative;
     width: 400px;
+    margin: 0 auto;
+    top:50px;
     padding: 10px;
     font-size: 19px;
 }
@@ -672,7 +671,7 @@ to {
     width: 400px;
     display: block;
     position: relative;
-    left: 10px;
+    /* left: 10px; */
     cursor: pointer;
 }
 #skillEvaluate {
