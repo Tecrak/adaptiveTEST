@@ -95,6 +95,10 @@
         top:70px;
         font-size: 32px;
     }
+    #modal_window {
+        top:20px;
+        transform: scale(0.90);
+    }
     .about_container {
         display: block;
     }
