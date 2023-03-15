@@ -572,6 +572,9 @@ to {
     z-index: 5;
     top:0;
     width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     height: 100%;
     animation: 1s opener forwards;
     -o-animation: 1s opener forwards;
@@ -592,8 +595,6 @@ to {
     border-radius: 3px;
     position: relative;
     width: 400px;
-    margin: 0 auto;
-    top:100px;
     padding: 10px;
     font-size: 19px;
 }
