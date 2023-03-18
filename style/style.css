@@ -513,7 +513,7 @@ to {
     height: 300px; 
     box-shadow: 2px 5px 5px 0px grey;
     position: relative;
-    background: url(/img/specifications.jpg) center center/cover no-repeat;
+    background: url(../img/specifications.jpg) center center/cover no-repeat;
 
 }
 .skill > p {
