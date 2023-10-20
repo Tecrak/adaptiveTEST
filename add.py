@@ -1,6 +1,6 @@
 $servername = "localhost";
 $username = "root";
-$password = "28080303sTss$!M";
+$password = "28080303sTss!M";
 $database = "form_data";
 
 // Create connection
