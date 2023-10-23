@@ -27,6 +27,7 @@ form.addEventListener('submit', async function (event) {
   const JSS = document.getElementById('JSS').value;
   const MySQLS = document.getElementById('MySQLS').value;
   const WebDesignS = document.getElementById('WebDesignS').value;
+  const message = document.getElementById('message').value;
   const CV = document.getElementById('CV').value;
 
   try {
@@ -41,6 +42,7 @@ form.addEventListener('submit', async function (event) {
       JSS: JSS,
       MySQLS: MySQLS,
       WebDesignS: WebDesignS,
+      message: message,
       CV: CV
 
     });
