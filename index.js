@@ -16,7 +16,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const form = document.getElementById('form');
 
-form.addEventListener("DOMContentLoaded", 'submit', async function (event) {
+form.addEventListener('submit', async function (event) {
   event.preventDefault();
   const name = document.getElementById('name').value;
   const surname = document.getElementById('surname').value;
@@ -25,7 +25,6 @@ form.addEventListener("DOMContentLoaded", 'submit', async function (event) {
   const HTMLS = document.getElementById('HTMLS').value;
   const CSSS = document.getElementById('CSSS').value;
   const JSS = document.getElementById('JSS').value;
-  const PHPS = document.getElementById('PHPS').value;
   const MySQLS = document.getElementById('MySQLS').value;
   const WebDesignS = document.getElementById('WebDesignS').value;
   const CV = document.getElementById('CV').value;
@@ -40,7 +39,6 @@ form.addEventListener("DOMContentLoaded", 'submit', async function (event) {
       HTMLS: HTMLS,
       CSSS: CSSS,
       JSS: JSS,
-      PHPS: PHPS,
       MySQLS: MySQLS,
       WebDesignS: WebDesignS,
       CV: CV
