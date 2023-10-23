@@ -33,7 +33,3 @@ form.addEventListener('submit', async function (event) {
     console.error('Error adding document: ', error);
   }
 });
-  catch(function (error) {
-      console.error('Error adding document: ', error);
-  });
-});
