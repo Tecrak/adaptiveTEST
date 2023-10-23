@@ -15,3 +15,29 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+const db = firebase.firestore();
+
+        // Get the form element
+const form = document.getElementById('myForm');
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent the form from submitting traditionally
+
+  // Get user input
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+
+  // Add data to Firestore
+  db.collection('user_data').add({
+      name: name,
+      email: email
+  })
+  .then(function (docRef) {
+      console.log('Document written with ID: ', docRef.id);
+      // Optionally, you can redirect the user to a thank you page or display a success message here
+  })
+  .catch(function (error) {
+      console.error('Error adding document: ', error);
+  });
+});
