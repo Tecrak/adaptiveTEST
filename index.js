@@ -1,3 +1,4 @@
+//COOO
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
 import { getFirestore, doc, getDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/9.6.6//firebase-firestore.js";
 // TODO: Add SDKs for Firebase products that you want to use
