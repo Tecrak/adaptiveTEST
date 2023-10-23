@@ -32,7 +32,7 @@ form.addEventListener('submit', async function (event) {
 
   try {
     // Add data to Firestore
-    const docRef = await addDoc(collection(db, 'user_data'), {
+    const docRef = await addDoc(collection(db, 'testData'), {
       name: name,
       surname: surname,
       email: email,
