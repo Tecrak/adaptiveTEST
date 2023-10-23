@@ -1,5 +1,5 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
+import { initializeApp } from '/firebase/app';
+import { getFirestore, collection, getDocs } from '/firebase/firestore/lite';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -13,18 +13,12 @@ const firebaseConfig = {
   appId: "1:623331774347:web:bda28952a8de27cd64a98e"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-const db = firebase.firestore();
-
-        // Get the form element
+const db = getFirestore(app);
 const form = document.getElementById('myForm');
 
 form.addEventListener('submit', function (event) {
-  event.preventDefault(); // Prevent the form from submitting traditionally
-
-  // Get user input
+  event.preventDefault();
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
 
