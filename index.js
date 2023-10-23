@@ -1,8 +1,5 @@
-//COOO
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
-import { getFirestore, doc, getDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/9.6.6//firebase-firestore.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -14,24 +11,27 @@ const firebaseConfig = {
   appId: "1:623331774347:web:bda28952a8de27cd64a98e"
 };
 
-const app = await initializeApp(firebaseConfig);
-const db = await getFirestore(app);
-const form = await document.getElementById('myForm');
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const form = document.getElementById('myForm');
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit', async function (event) {
   event.preventDefault();
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
 
-  // Add data to Firestore
-  db.collection('user_data').add({
+  try {
+    // Add data to Firestore
+    const docRef = await addDoc(collection(db, 'user_data'), {
       name: name,
       email: email
-  })
-  .then(function (docRef) {
-      console.log('Document written with ID: ', docRef.id);
-      // Optionally, you can redirect the user to a thank you page or display a success message here
-  })
+    });
+    console.log('Document written with ID: ', docRef.id);
+    // Optionally, you can redirect the user to a thank you page or display a success message here
+  } catch (error) {
+    console.error('Error adding document: ', error);
+  }
+});
   .catch(function (error) {
       console.error('Error adding document: ', error);
   });
