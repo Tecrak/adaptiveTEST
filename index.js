@@ -16,7 +16,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const form = document.getElementById('form');
 
-form.addEventListener('submit', async function (event) {
+form.addEventListener("DOMContentLoaded", 'submit', async function (event) {
   event.preventDefault();
   const name = document.getElementById('name').value;
   const surname = document.getElementById('surname').value;
