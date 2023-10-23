@@ -1,4 +1,3 @@
-
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 // TODO: Add SDKs for Firebase products that you want to use
@@ -14,17 +13,12 @@ const firebaseConfig = {
   appId: "1:623331774347:web:bda28952a8de27cd64a98e"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-
-// Get the form element
 const form = document.getElementById('myForm');
 
 form.addEventListener('submit', function (event) {
-  event.preventDefault(); // Prevent the form from submitting traditionally
-
-  // Get user input
+  event.preventDefault();
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
 
