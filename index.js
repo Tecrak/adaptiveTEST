@@ -15,7 +15,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const db = await getFirestore(app);
 const form = document.getElementById('myForm');
 
 form.addEventListener('submit', function (event) {
