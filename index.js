@@ -14,9 +14,9 @@ const firebaseConfig = {
   appId: "1:623331774347:web:bda28952a8de27cd64a98e"
 };
 
-const app = initializeApp(firebaseConfig);
+const app = await initializeApp(firebaseConfig);
 const db = await getFirestore(app);
-const form = document.getElementById('myForm');
+const form = await document.getElementById('myForm');
 
 form.addEventListener('submit', function (event) {
   event.preventDefault();
