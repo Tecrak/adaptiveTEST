@@ -397,10 +397,10 @@
         const navigate_open=document.querySelector(".list");
 
         function contact(){
-            modal_open.style="display:block";
+            modal_open.classList.remove("closed");
         }
         function closer(){
-            modal_open.style="display:none";
+            modal_open.classList.add("closed");
         }
         function mobileMenu(){
             navigate_open.style="display:block";
