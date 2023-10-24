@@ -102,6 +102,7 @@
         height: 75px;
         margin: 10px;
         overflow: scroll;
+        animation: none;
         top:20px;
         left: 0;
     }
@@ -181,5 +182,13 @@
     }
     .header-content > p {
         font-size: 18px;
+    }
+}
+@media(max-width:420px){
+    #modal_window{
+        transform: scale(0.7);
+    }
+    .specifi_img {
+        display: none;
     }
 }

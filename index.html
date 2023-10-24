@@ -359,8 +359,8 @@
                             <input type="range" class="SkillI" min="0" max="100" step="10" value="0" name="jss" id="JSS" required>
                         </li>
                         <li>
-                            <label for="PHPS">PHP</label>
-                            <input type="range" class="SkillI" min="0" max="100" step="10" value="0" name="phps" id="PHPS "required>
+                            <label for="PHPS">Js</label>
+                            <input type="range" class="SkillI" min="0" max="100" step="10" value="0" name="phps" id="PHPS" required>
                         </li>
                         <li>
                             <label for="MySQLS">MySQL</label>
@@ -381,14 +381,18 @@
                 <div class="textarea">
                     <p>Tell us about you</p>
                     <textarea style="resize:none; height: 100px; width: 95%; border-radius: 5px;" id="message"></textarea>
-                    <button type="submit" name="submiter" id="submiter">Submit</button>
+                    <button type="submit" name="submiter" id="submiter" >Submit</button>
                 </div>
             </form>
             <script defer type="module" src=index.js ></script>
         </div>
+        <div id="thankWind">
+            <p>Thank you for application!</p><br></br>
+            <p>We will contact you as soon as it's possible</p><br></br>
+            <a href="#"><button onclick="closer()" type="button">Back to home</button></a>
+        </div>
     </div>
     <script>
-
         const modal_open = document.getElementById("modal_background"); 
         const navigate_open=document.querySelector(".list");
 

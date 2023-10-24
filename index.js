@@ -18,12 +18,14 @@ const form = document.getElementById('form');
 
 form.addEventListener('submit', async function (event) {
   event.preventDefault();
+  const role = document.getElementById('role').value;
   const name = document.getElementById('name').value;
   const surname = document.getElementById('surname').value;
   const email = document.getElementById('email').value;
   const birth = document.getElementById('birth').value;
   const HTMLS = document.getElementById('HTMLS').value;
   const CSSS = document.getElementById('CSSS').value;
+  const PHPS = document.getElementById('PHPS').value;
   const JSS = document.getElementById('JSS').value;
   const MySQLS = document.getElementById('MySQLS').value;
   const WebDesignS = document.getElementById('WebDesignS').value;
@@ -33,12 +35,14 @@ form.addEventListener('submit', async function (event) {
   try {
     // Add data to Firestore
     const docRef = await addDoc(collection(db, 'testData'), {
+      role: role,
       name: name,
       surname: surname,
       email: email,
       birth: birth,
       HTMLS: HTMLS,
       CSSS: CSSS,
+      PHPS: PHPS,
       JSS: JSS,
       MySQLS: MySQLS,
       WebDesignS: WebDesignS,
@@ -47,7 +51,13 @@ form.addEventListener('submit', async function (event) {
 
     });
     console.log('Document written with ID: ', docRef.id);
-    // Optionally, you can redirect the user to a thank you page or display a success message here
+    const submitClose=document.getElementById("submiter");
+    const thankW=document.getElementById("thankWind");
+    thankW.style="display:block";
+    submitClose.style="display:none";
+    submitClose.disabled=true;
+    form.reset();
+
   } catch (error) {
     console.error('Error adding document: ', error);
   }
