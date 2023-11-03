@@ -373,7 +373,7 @@ to {
 }
 .team_content h3 span {
     color:rgb(255, 129, 33);
-    text-shadow: 0px 1px 2px rgb(28, 28, 28);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 .team_container {
     width: 100%;
@@ -479,7 +479,7 @@ to {
     position: relative;
     font-weight: 600;
     color:rgb(255, 129, 33);
-    text-shadow: 0px 1px 1px rgb(42, 42, 42);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 .specifi_content {
     margin: 0;
@@ -872,6 +872,7 @@ input[type="range"] {
 }
 .filter_block > h3 > span {
     color:rgb(255, 129, 33);
+    text-shadow:1px 1px 2px rgb(0, 0, 0);
     
 }
 #filters {
@@ -1029,6 +1030,7 @@ footer {
     font-size: 24px;
     color:rgb(255, 129, 33);
     font-weight: bold;
+    text-shadow:1px 1px 2px rgb(0, 0, 0);
 }
 .footer_p {
     margin: 0;
